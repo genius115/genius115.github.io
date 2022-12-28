@@ -77,6 +77,10 @@
   <time class="dt-published" datetime="2022-12-28T02:41:05.000Z" itemprop="datePublished">2022-12-28</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -93,20 +97,51 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="成功创建我的第一篇博客文章"><a href="#成功创建我的第一篇博客文章" class="headerlink" title="成功创建我的第一篇博客文章"></a>成功创建我的第一篇博客文章</h3><ol>
-<li>spring boot</li>
-<li>spring cloud</li>
-<li>docker</li>
-<li>nacos</li>
+        <h3 id="1、创建博客文章"><a href="#1、创建博客文章" class="headerlink" title="1、创建博客文章"></a>1、创建博客文章</h3><ol>
+<li>$ hexo new “我的第一篇博客”</li>
+<li>用软件typora打开直接编写文章</li>
+<li>清理hexo clean</li>
+<li>构建静态文件hexo g</li>
+<li>上传至仓库(上传报错多位网络原因，多上传几次即可)hexo d</li>
 </ol>
+<p><img src="/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/03.jpg" alt="本地图片"></p>
+<h3 id="2、创建草稿文件"><a href="#2、创建草稿文件" class="headerlink" title="2、创建草稿文件"></a>2、创建草稿文件</h3><ol>
+<li>新建草稿文件hexo new draft b</li>
+<li>预览草稿文件hexo server –draft</li>
+<li>发布草稿hexo publish b</li>
+</ol>
+<p><img src="/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/04.jpg" alt="本地图片"></p>
+<h3 id="3、GitHub上建站访问"><a href="#3、GitHub上建站访问" class="headerlink" title="3、GitHub上建站访问"></a>3、GitHub上建站访问</h3><ol>
+<li><p>新建github仓库</p>
+<p>仓库名称限制了为你的：用户名+.github.io</p>
+</li>
+<li><p>安装hexo上传插件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改hexo配置文件指定仓库路径</p>
+<p>可在文件夹中直接打开文件，也可通过vim直接编辑</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim _config.yml #找到Deploymentdeploy:  type: git  repo: 你的github仓库路径  branch: master </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>推送站点到github</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">推送命令hexo d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试访问</p>
+<p>输入你的仓库名称,即可访问成功。</p>
+<p>https:&#x2F;&#x2F;用户名+.github.io&#x2F;</p>
+</li>
+</ol>
+<p><img src="https://alifei05.cfp.cn/creative/vcg/veer/1600water/veer-431146894.jpg" alt="网络图片"></p>
+<p>​                                                                                                                                          2022年12月28日 china </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="clc722cx50001ncun38wx1nv7" data-title="我的第一篇博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="clc737oms00018gundzt047tm" data-title="我的第一篇博客" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Document/" rel="tag">Document</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tutorial/" rel="tag">Tutorial</a></li></ul>
+
     </footer>
   </div>
   
@@ -154,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/28/hello-world/" data-id="clc722cwv0000ncunfhw4h795" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/28/hello-world/" data-id="clc737omm00008gung7j4dmvy" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -173,12 +208,33 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Document/" rel="tag">Document</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tutorial/" rel="tag">Tutorial</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Document/" style="font-size: 10px;">Document</a> <a href="/tags/Tutorial/" style="font-size: 10px;">Tutorial</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
